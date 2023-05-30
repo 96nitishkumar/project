@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salary App</title>
+</head>
+<body>
+<style>
+.field{margin-left: 30%;margin-right: 40%; margin-top: 50px;}
+.in{margin: 10px;}
+
+</style>
+
+
+
+
+    <fieldset class="field">
+<label>Annual Salary:</label>
+<input type="number" id = "num1" placeholder="enter Annual salary" class="in">
+<br>
+<label>Monthly Salary:</label>
+<input type="number" id = "num2" placeholder="enter Annual salary" class="in">
+<br>
+<button onclick="func()">calculate</button>
+
+    </fieldset>
+<script>
+let func=()=>{
+    let salary=parseInt(document.getElementById("num1").value);
+    document.getElementById("num2").value=salary/12;
+}
+
+
+</script>
+
+</body>
+
+
+</html>

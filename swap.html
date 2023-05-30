@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swap app</title>
+</head>
+<body>
+
+
+<style>
+    .f{position: absolute; left: 50%;top: 50%;transform: translate(-50%,-50%); background-color: cadetblue; width: 200px;height: 150px;}
+    .in{margin: 7px;}
+    .btn{background-color: blue;margin-left: 60px;width:60px;color: aliceblue;border-radius: 5px;}
+</style>
+
+
+<fieldset class="f">
+<input type ="number" id="num1" class="in">
+<br>
+<input type ="number" id="num2" class="in">
+<br>
+<button onclick="swap()" class="btn">swap</button>
+<br>
+<input type ="number" id="num3" class="in">
+
+<br>
+<input type ="number" id="num4" class="in">
+</fieldset>
+<script>
+let swap=()=>{
+    let a=parseInt(document.getElementById("num1").value);
+    let b = parseInt(document.getElementById("num2").value);
+    let z=a;
+    a=b;
+    b=z;
+    document.getElementById("num3").value=a;
+    document.getElementById("num4").value=b;
+}
+
+
+</script>
+
+
+</body>
+
+</html>
